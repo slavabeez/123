@@ -1,3 +1,4 @@
+print("load")
 local URL_FILE = "https://raw.githubusercontent.com/slavabeez/link/main/link.lua"
 local BUY_URL  = "https://funpay.com/users/6883431/"
 local KEYFILE  = "protecthub_key.txt"
@@ -328,7 +329,7 @@ buy.MouseButton1Click:Connect(function()
     if setclipboard then pcall(setclipboard, BUY_URL); setStatus("Ссылка скопирована!", Color3.fromRGB(120, 200, 230))
     else setStatus("Купить ключ: " .. BUY_URL, Color3.fromRGB(120, 200, 230)) end
 end)
-print("всё ок")
+
 local saved = loadKey()
 if saved and saved ~= "" then
     box.Text = saved
